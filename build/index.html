@@ -6,9 +6,383 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/3363fbe348.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="font-poppins">
+    <div id="hero" class="min-h-screen bg-[url('../img/intro-bg.jpg')] bg-top bg-cover bg-fixed">
+        <div class="bg-black/70 min-h-screen flex">
+            <div class="text-center felx flex-col m-auto">
+                <img class="w-28 xs:w-44 sm:w-48 h-28 xs:h-44 sm:h-48 m-auto border-8 rounded-full object-fit-cover " src="img/placeholder.JPG" alt="">
+                <h2 class="text-white text-2xl xs:text-4xl my-8 font-semibold uppercase">hello! I'm Hency <span
+                        class="hidden sm:inline-block">-</span> <br class="sm:hidden"> Web developer,<br>
+                    graphics designer & illustrator</h2>
+                <p class="text-gray-300 mb-8 font-normal text-sm xs:text-lg sm:text-xl">based in Mangalore, India.</p>
+                <button class="bg-accent px-8 py-2 sm:px-10 sm:py-3 font-medium text-xs xs:text-sm sm:text-lg">About
+                    Me</button>
+                </img>
+            </div>
+        </div>
+    </div>
+
+
+    <main class="bg-white">
+        <nav class="border-b-[1px] sticky top-0 border-gray-200 py-3 sm:py-5 bg-white overflow-x-clip z-10">
+            <div class="flex justify-between align-middle sm:max-w-2xl md:max-w-3xl lg:max-w-7xl mx-6 px-3 sm:mx-auto">
+                <h1 class="font-bold text-3xl text-slate-600">Hency</h1>
+                <ul class="lg:flex uppercase hidden font-semibold text-slate-800 justify-between md:gap-x-3 lg:gap-x-7">
+                    <li class="m-auto">home</li>
+                    <li class="m-auto">about</li>
+                    <li class="m-auto">services</li>
+                    <li class="m-auto">resume</li>
+                    <li class="m-auto">Portfolio</li>
+                    <!-- <li class="m-auto">faq</li>
+                    <li class="m-auto">client</li> -->
+                    <li class="m-auto">contact</li>
+                </ul>
+                <div class="flex gap-3 md:gap-6 text-slate-600">
+                    <!-- <i class="hidden fa-solid m-auto fa-bars fa-lg"></i> -->
+                    <button id="hamburger-button" class="w-6 h-full flex">
+                        <div
+                            class="bg-slate-600 w-6 h-0.5 rounded my-auto transition-all duration-500 before:content-[''] before:bg-slate-600 before:w-6 before:h-0.5 before:rounded before:absolute before:-translate-x-3  before:-translate-y-2 before:transition-all before:duration-500 after:content-[''] after:bg-slate-600 after:w-6 after:h-0.5 after:rounded after:absolute after:translate-y-2 after:transition-all after:-translate-x-3 after:duration-500 inline lg:hidden cursor-pointer">
+                        </div>
+                    </button>
+                    <i class="fa-brands m-auto fa-facebook fa-lg"></i>
+                    <i class="fa-brands m-auto fa-twitter fa-lg"></i>
+                    <i class="fa-brands m-auto fa-instagram fa-lg"></i>
+                </div>
+            </div>
+            <div class=" absolute top-[61px] hidden sm:top-[77px] lg:hidden w-screen h-0 overflow" id="mobile-menu">
+                <ul class="bg-white flex flex-col uppercase font-semibold text-slate-800 justify-start shadow-xl py-3">
+                    <li class="me-auto ms-4 my-2">home</li>
+                    <hr class="mx-4">
+                    <li class="me-auto ms-4 my-2">about</li>
+                    <hr class="mx-4">
+                    <li class="me-auto ms-4 my-2">services</li>
+                    <hr class="mx-4">
+                    <li class="me-auto ms-4 my-2">resume</li>
+                    <hr class="mx-4">
+                    <li class="me-auto ms-4 my-2">Portfolio</li>
+                    <hr class="mx-4">
+                    <!-- <li class="me-auto ms-4 my-2">faq</li>
+                    <li class="me-auto ms-4 my-2">client</li> -->
+                    <li class="me-auto ms-4 my-2">contact</li>
+                </ul>
+            </div>
+        </nav>
+
+        <section id="home" class="sm:max-w-2xl md:max-w-3xl lg:max-w-7xl mx-6 px-3 sm:mx-auto mt-20 mb-24">
+            <div class="grid gap-3">
+                <div class="text-center mx-auto bg-accent w-fit px-3">About Me</div>
+                <h1 class="text-center text-4xl font-semibold">Know Me More</h1>
+            </div>
+
+            <div class="grid grid-cols-8 mt-8">
+                <div class="col-span-8 md:col-span-5">
+                    <div class="text-3xl md:text-left text-center">Hi, I'm <span
+                            class="font-bold text-zinc-800 w-fit border-b-2 border-accent">Hency
+                            Dsouza
+                        </span>
+                    </div>
+                    <div class="text-xl mt-5 leading-relaxed md:text-left text-center">I'm a designer & developer with a
+                        passion for web design. I enjoy
+                        developing simple, clean and
+                        slick websites that provide real value to the end user. Thousands of clients have procured
+                        exceptional results while working with me. Delivering work within time and budget which meets
+                        client’s requirements is our moto.</div>
+                </div>
+                <div class="col-span-8 md:col-span-3 flex flex-col gap-5 mt-5 md:my-auto">
+                    <div class="text-8xl md:text-9xl mx-auto text-center">
+                        <div class="w-28 h-28 md:h-32 md:w-32 bg-accent rounded-full relative z-0">
+                            <div class="absolute right-10 top-2 md:right-11 text-zinc-700">1</div>
+                        </div>
+                    </div>
+                    <div class="text-center text-2xl text-zinc-800">Year of <span class="font-bold">Experiance</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 mx-auto gap-4 lg:grid-cols-4 mt-10 text-center md:text-left">
+                <div class="grid gap-2">
+                    <div class="font-medium text-zinc-400">Name:</div>
+                    <div class="font-semibold">Hency Dsouza</div>
+                </div>
+                <div class="grid gap-2">
+                    <div class="font-medium text-zinc-400">Email:</div>
+                    <a href="mailto:hencyhd39@gmail.com"
+                        class="font-semibold underline underline-offset-1">hencyhd39@gmail.com</a>
+                </div>
+                <div class="grid gap-2">
+                    <div class="font-medium text-zinc-400">Date of birth:</div>
+                    <div class="font-semibold">26 February, 2002</div>
+                </div>
+                <div class="grid gap-2">
+                    <div class="font-medium text-zinc-400">From:</div>
+                    <div class="font-semibold">Mangalore, India</div>
+                </div>
+            </div>
+        </section>
+
+        <section class=" bg-zinc-100 pt-20 pb-24">
+            <div class="sm:max-w-2xl md:max-w-3xl lg:max-w-7xl mx-6 px-3 sm:mx-auto">
+                <div class="grid gap-3 mb-28">
+                    <div class="text-center mx-auto bg-accent w-fit px-3">What I Do?</div>
+                    <h1 class="text-center text-4xl font-semibold text-zinc-800">How I can help your next project</h1>
+                </div>
+
+                <div class="grid lg:grid-cols-3 gap-5 lg:gap-3">
+                    <div class="grid text-center">
+                        <i class="fas fa-palette text-5xl text-accent mx-auto"></i>
+                        <div class="my-7 text-2xl font-semibold">Graphic Design</div>
+                        <div class="font-normal text-zinc-500 leading-relaxed">Lorem Ipsum is simply dummy text of the
+                            printing and
+                            typesetting industry. Lorem Ipsum has
+                            been the industry’s standard dummy text.</div>
+                    </div>
+
+                    <div class="grid text-center">
+                        <i class="fas fa-desktop text-5xl text-accent mx-auto"></i>
+                        <div class="my-7 text-2xl font-semibold">Web Design</div>
+                        <div class="font-normal text-zinc-500 leading-relaxed">Lorem Ipsum is simply dummy text of the
+                            printing and
+                            typesetting industry. Lorem Ipsum has
+                            been the industry’s standard dummy text.</div>
+                    </div>
+
+                    <div class="grid text-center">
+                        <i class="fas fa-pencil-ruler text-5xl text-accent mx-auto"></i>
+                        <div class="my-7 text-2xl font-semibold">UI/UX Design</div>
+                        <div class="font-normal text-zinc-500 leading-relaxed">Lorem Ipsum is simply dummy text of the
+                            printing and
+                            typesetting industry. Lorem Ipsum has
+                            been the industry’s standard dummy text.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pt-20 pb-24">
+            <div class="sm:max-w-2xl md:max-w-3xl lg:max-w-7xl mx-6 px-3 sm:mx-auto">
+                <div class="grid gap-3 mb-20">
+                    <div class="text-center mx-auto bg-accent w-fit px-3">Resume</div>
+                    <h1 class="text-center text-4xl font-semibold text-zinc-800">A summary of My Resume</h1>
+                </div>
+
+                <div class="grid gap-5 grid-cols-1 lg:grid-cols-2">
+                    <div>
+                        <h1 class="text-3xl font-semibold">My Education</h1>
+                        <div class="mt-10 px-4 border-l-2 border-accent">
+                            <div>
+                                <div class="text-xl font-medium">Bachelor in Computer Engineering</div>
+                                <div class="text-md font-normal my-3">MITE / 2020 - current</div>
+                                <div class="text-sm text-zinc-500">Lorem Ipsum is simply dummy text of the printing and
+                                    typesetting
+                                    industry. Lorem
+                                    Ipsum has been the dummy text.</div>
+                            </div>
+                            <hr class="my-8">
+                            <div>
+                                <div class="text-xl font-medium">Pre University</div>
+                                <div class="text-md font-normal my-3">PPC Adamar / 2018 - 2020</div>
+                                <div class="text-sm text-zinc-500">Lorem Ipsum is simply dummy text of the printing and
+                                    typesetting
+                                    industry. Lorem
+                                    Ipsum has been the dummy text.</div>
+                            </div>
+                            <hr class="my-8">
+                            <div>
+                                <div class="text-xl font-medium">High School</div>
+                                <div class="text-md font-normal my-3">St. Francis High School / 2006 - 2018</div>
+                                <div class="text-sm text-zinc-500">Lorem Ipsum is simply dummy text of the printing and
+                                    typesetting
+                                    industry. Lorem
+                                    Ipsum has been the dummy text.</div>
+                            </div>
+                            <hr class="mt-8">
+                        </div>
+                    </div>
+                    <div class="mt-20 lg:mt-0">
+                        <h1 class="text-3xl font-semibold">My Experience</h1>
+                        <div class="mt-10 px-4 border-l-2 border-accent">
+                            <div>
+                                <div class="text-xl font-medium">Pace Wisdom Internship</div>
+                                <div class="text-md font-normal my-3">Mangalore / Oct 2023 - current</div>
+                                <div class="text-sm text-zinc-500">Lorem Ipsum is simply dummy text of the printing and
+                                    typesetting
+                                    industry. Lorem
+                                    Ipsum has been the dummy text.</div>
+                            </div>
+                            <hr class="my-8">
+                            <div>
+                                <div class="text-xl font-medium">Dlithe Internship</div>
+                                <div class="text-md font-normal my-3">MITE / Aug - Sep 2023</div>
+                                <div class="text-sm text-zinc-500">Lorem Ipsum is simply dummy text of the printing and
+                                    typesetting
+                                    industry. Lorem
+                                    Ipsum has been the dummy text.</div>
+                            </div>
+                            <hr class="mt-8">
+                            <!-- <hr class="my-8">
+                            <div>
+                                <div class="text-xl font-medium">Master in Computer Engineering</div>
+                                <div class="text-md font-normal my-3">Harvard University / 2015 - 2017</div>
+                                <div class="text-sm text-zinc-500">Lorem Ipsum is simply dummy text of the printing and
+                                    typesetting
+                                    industry. Lorem
+                                    Ipsum has been the dummy text.</div>
+                            </div>
+                            <hr class="mt-8"> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="my-16">
+                    <div class="text-3xl font-semibold">My Skills</div>
+
+                    <div class="grid md:grid-cols-2 mt-5 gap-6">
+                        <div>
+                            <div class="flex justify-between mb-3">
+                                <p>Web Design</p>
+                                <p>65%</p>
+                            </div>
+                            <div class="h-2 w-full bg-zinc-300 rounded">
+                                <div class="h-2 w-[65%] bg-accent rounded"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-3">
+                                <p>HTML/CSS</p>
+                                <p>75%</p>
+                            </div>
+                            <div class="h-2 w-full bg-zinc-300 rounded">
+                                <div class="h-2 w-[75%] bg-accent rounded"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-3">
+                                <p>JavaScript</p>
+                                <p>60%</p>
+                            </div>
+                            <div class="h-2 w-full bg-zinc-300 rounded">
+                                <div class="h-2 w-[60%] bg-accent rounded"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-3">
+                                <p>Bootstrap</p>
+                                <p>80%</p>
+                            </div>
+                            <div class="h-2 w-full bg-zinc-300 rounded">
+                                <div class="h-2 w-[80%] bg-accent rounded"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-3">
+                                <p>SCSS</p>
+                                <p>50%</p>
+                            </div>
+                            <div class="h-2 w-full bg-zinc-300 rounded">
+                                <div class="h-2 w-[50%] bg-accent rounded"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-3">
+                                <p>Tailwind CSS</p>
+                                <p>60%</p>
+                            </div>
+                            <div class="h-2 w-full bg-zinc-300 rounded">
+                                <div class="h-2 w-[60%] bg-accent rounded"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid">
+                    <button class="mx-auto border-2 border-black px-7 py-3 font-medium">Download CV</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-[url('../img/intro-bg-2.jpg')] bg-top bg-cover bg-fixed">
+            <div class="bg-black/70 py-36 flex">
+                <div class="m-auto grid">
+                    <p class="text-white text-4xl font-semibold">Interested in working with me?</p>
+                    <button
+                        class="bg-accent mx-auto mt-14 px-8 py-2 sm:px-10 sm:py-3 font-medium text-xs xs:text-sm sm:text-lg">Hire
+                        Me!</button>
+                    </img>
+                </div>
+            </div>
+        </section>
+
+        <section class="pt-20 pb-24 bg-accent">
+            <div
+                class="sm:max-w-2xl md:max-w-3xl lg:max-w-7xl mx-6 px-3 sm:mx-auto grid grid-cols-1 md:grid-cols-2 text-zinc-800 gap-20">
+                <div>
+                    <h1 class="text-4xl font-semibold">Let's get in touch</h1>
+                    <div class="mt-14 leading-10 text-xl">I enjoy discussing new projects and design challenges. Please
+                        share as much info, as possible
+                        so we can get the most out of our first catch-up.</div>
+
+                    <div class="mt-10">
+                        <p class="text-xl font-semibold">Living In:</p>
+                        <p class="text-lg mt-3">Tenkila, Pilar, Karnataka</p>
+                    </div>
+
+                    <div class="mt-5">
+                        <p class="text-xl font-semibold">Call:</p>
+                        <p class="text-lg mt-3">+91 9901430235</p>
+                    </div>
+
+                    <div class="mt-10 text-2xl">
+                        <i class="fa-brands fa-twitter mr-4"></i>
+                        <i class="fa-brands fa-facebook mr-4"></i>
+                        <i class="fa-brands fa-instagram mr-4"></i>
+                        <i class="fa-brands fa-github mr-4"></i>
+                        <i class="fa-brands fa-dribbble"></i>
+                    </div>
+                </div>
+                <div>
+                    <h1 class="text-4xl font-semibold">Estimate your Project?</h1>
+                    <div class="mt-14 leading-10 text-xl">
+                        <p class="text-sm font-medium">What is Your Name:</p>
+                        <input class="bg-transparent border-b-2 w-full border-zinc-700 mt-2 outline-none" type="text"
+                            name="" id="">
+                    </div>
+
+                    <div class="mt-6 leading-10 text-xl">
+                        <p class="text-sm font-medium">Your Email Address:</p>
+                        <input class="bg-transparent border-b-2 w-full border-zinc-700 mt-2 outline-none" type="text"
+                            name="" id="">
+                    </div>
+
+                    <div class="mt-6 leading-10 text-xl">
+                        <p class="text-sm font-medium">Your Email Address:</p>
+                        <!-- <textarea class="bg-transparent border-b-2 w-full border-zinc-700 mt-2 outline-none" type="text"
+                            name="" id=""></textarea> -->
+                        <textarea name="" id=""
+                            class="bg-transparent border-b-2 w-full border-zinc-700 mt-2 outline-none"
+                            rows="3"></textarea>
+                    </div>
+
+                    <button
+                        class="bg-zinc-800 text-white mx-auto mt-14 px-8 py-2 sm:px-10 sm:py-3 font-medium text-xs xs:text-sm sm:text-lg">Send<i
+                            class="fa-solid fa-arrow-right ml-3"></i></button>
+                    </img>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-zinc-900 text-white py-16">
+            <div class="sm:max-w-2xl md:max-w-3xl lg:max-w-7xl mx-6 px-3 sm:mx-auto flex flex-col md:flex-row justify-between">
+                <p>Copyright &copy; 2024 <a href="" class="text-accent underline">Hency</a>. All Rights Reserved</p>
+                <p class="mt-3 md:mt-0">Designed by <a href="" class="text-accent underline">Harnished Design</a></p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="js/main.js" defer></script>
+
 </body>
 
 </html>
