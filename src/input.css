@@ -7,6 +7,15 @@
 @layer utilities {
 
     .toggle-btn {
-        @apply [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div]:bg-transparent [&>div]:rotate-[180deg]
+        /* @apply [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div]:bg-transparent [&>div]:rotate-[180deg] */
+        @apply [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div]:bg-transparent
+    }
+
+    .nav-underline {
+        @apply border-b-[3px] border-accent
+    }
+
+    .selection{
+        @apply bg-accent text-white
     }
 }
