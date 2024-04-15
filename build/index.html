@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" defer>
     <script src="https://kit.fontawesome.com/3363fbe348.js" crossorigin="anonymous"></script>
 </head>
 
@@ -19,7 +19,7 @@
                         class="hidden sm:inline-block">-</span> <br class="sm:hidden"> Web developer,<br>
                     graphics designer & illustrator</h2>
                 <p class="text-gray-300 mb-8 font-normal text-sm xs:text-lg sm:text-xl">based in Mangalore, India.</p>
-                <button class="bg-accent px-8 py-2 sm:px-10 sm:py-3 font-medium text-xs xs:text-sm sm:text-lg">About
+                <button class="bg-accent px-8 py-2 sm:px-10 sm:py-3 font-medium text-xs xs:text-sm sm:text-lg hover:saturate-200">About
                     Me</button>
                 </img>
             </div>
@@ -27,7 +27,7 @@
     </div>
 
     <main class="bg-white">
-        <nav class="border-b-[1px] sticky top-0 border-gray-200 py-3 sm:py-5 backdrop-blur overflow-x-clip z-10">
+        <nav class="border-b-[1px] sticky top-0 border-gray-200 py-3 sm:py-5 bg-white overflow-x-clip z-10">
             <div class="flex justify-between align-middle sm:max-w-2xl md:max-w-3xl lg:max-w-7xl mx-6 px-3 sm:mx-auto">
                 <h1 class="font-bold text-3xl text-slate-600">Hency</h1>
                 <ul class="lg:flex uppercase hidden font-semibold text-slate-800 justify-between md:gap-x-3 lg:gap-x-7">
@@ -52,7 +52,7 @@
                     <i class="fa-brands m-auto fa-instagram fa-lg"></i>
                 </div>
             </div>
-            <div class=" absolute top-[61px] hidden sm:top-[77px] lg:hidden w-screen h-0 overflow" id="mobile-menu">
+            <div class="absolute top-[61px] hidden sm:top-[77px] lg:hidden w-screen h-0 overflow" id="mobile-menu">
                 <ul class="bg-white flex flex-col uppercase font-semibold text-slate-800 justify-start shadow-xl py-3">
                     <li class="me-auto ms-4 my-2 hover:text-accent"><a href="#home">home</a></li>
                     <hr class="mx-4">
@@ -299,7 +299,7 @@
                 </div>
 
                 <div class="grid">
-                    <button class="mx-auto border-2 border-black px-7 py-3 font-medium">Download CV</button>
+                    <button class="transition-all ease-in-out mx-auto border-2 border-black px-7 py-3 font-medium hover:bg-black hover:text-white">Download CV</button>
                 </div>
             </div>
         </section>
@@ -353,7 +353,7 @@
                 <h1 id="project-title" class="font-bold text-xl text-center mb-5">Detailed Project 1</h1>
                 <div class="flex flex-col md:flex-row justify-between gap-6">
                     <div>
-                        <img id="project-image" class="md:max-w-[500px]" src="img/project-1.jpg" alt="">
+                        <img id="project-image" class="md:max-w-[500px]" src="img/project-1.png" alt="">
                     </div>
                     <div class="md:max-w-[430px]">
                         <div id="project-info-inner">
@@ -369,7 +369,7 @@
                 <div class="m-auto grid">
                     <p class="text-white text-4xl font-semibold text-center">Interested in working with me?</p>
                     <button
-                        class="bg-accent mx-auto mt-14 px-8 py-2 sm:px-10 sm:py-3 font-medium text-xs xs:text-sm sm:text-lg">Hire
+                        class="bg-accent mx-auto mt-14 px-8 py-2 sm:px-10 sm:py-3 font-medium text-xs xs:text-sm sm:text-lg hover:saturate-200 ease-in-out">Hire
                         Me!</button>
                     </img>
                 </div>
@@ -427,7 +427,7 @@
                     </div>
 
                     <button
-                        class="bg-zinc-800 text-white mx-auto mt-14 px-8 py-2 sm:px-10 sm:py-3 font-medium text-xs xs:text-sm sm:text-lg">Send<i
+                        class="bg-zinc-800 hover:bg-zinc-600 hover:shadow transition-all ease-in-out text-white mx-auto mt-14 px-8 py-2 sm:px-10 sm:py-3 font-medium text-xs xs:text-sm sm:text-lg ">Send<i
                             class="fa-solid fa-arrow-right ml-3"></i></button>
                     </img>
                 </div>

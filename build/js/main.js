@@ -45,7 +45,7 @@ const projectContainers = document.getElementsByClassName('project')
 for (let i = 0; i < projectContainers.length; i++) {
     projectContainers[i].addEventListener('click', () => {
         let index = Number(projectContainers[i].id.split('-')[1] - 1)
-        console.log(projects[index])
+        // console.log(projects[index])
         document.getElementById('project-info').classList.remove('hidden')
 
         const projectContainerInner = document.getElementById('project-info-inner')
@@ -81,3 +81,14 @@ for (let i = 0; i < projectContainers.length; i++) {
 document.getElementById('close-btn').addEventListener('click', () => {
     document.getElementById('project-info').classList.add('hidden')
 })
+
+const sectionList = document.querySelectorAll('section')
+
+window.addEventListener('scroll', function() {
+	var element = document.querySelector('#resume');
+	var position = element.getBoundingClientRect();
+
+	if(position.top >= 0 && position.bottom <= window.innerHeight || position.top < window.innerHeight && position.bottom >= 0) {
+		console.log(true);
+	}
+});
